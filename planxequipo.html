@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FutChoice | Plan por Equipo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER PRINCIPAL DE TEXTO */
+header{
+    text-align:center;
+    padding:20px 0;
+    font-size:24px;
+    font-weight:900;
+    letter-spacing:2px;
+    color:#2ecc71;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px 0;
+    border-bottom:1px solid #333;
+}
+
+nav a{
+    text-decoration:none;
+    color:#aaa;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#2ecc71;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:100px 0;
+}
+
+.hero-text h1{
+    font-size:48px;
+    font-weight:900;
+    background: linear-gradient(90deg, #2ecc71, #00ff99);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-text h2{
+    font-size:32px;
+    margin-top:20px;
+    color:#ccc;
+}
+
+.btn{
+    padding:18px 40px;
+    background: linear-gradient(45deg,#2ecc71,#00ff99);
+    border:none;
+    border-radius:50px;
+    font-weight:700;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(46,204,113,0.5);
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 40px rgba(46,204,113,0.8);
+}
+
+/* DETALLES DEL PLAN */
+.detalles{
+    display:flex;
+    gap:40px;
+    margin:60px 0;
+}
+
+.card{
+    flex:1;
+    background:#181818;
+    padding:40px;
+    border-radius:20px;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #2ecc71;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background: radial-gradient(circle, rgba(46,204,113,0.15) 0%, transparent 70%);
+    top:-50%;
+    left:-50%;
+    transform:rotate(25deg);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(46,204,113,0.3);
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:20px;
+    color:#2ecc71;
+}
+
+.card p{
+    color:#bbb;
+    margin-bottom:30px;
+}
+
+.section{
+    margin:40px 0;
+    background:#181818;
+    border-radius:20px;
+    border:1px solid #2ecc71;
+    box-shadow:0 0 20px rgba(46,204,113,0.5);
+    padding:30px;
+}
+
+/* FOOTER */
+footer{
+    border-top:1px solid #333;
+    padding:40px 0;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .detalles{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    FUTCHOICE
+</header>
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="quienes-somos.html">QUIÉNES SOMOS</a>
+    <a href="contactanos.html">CONTÁCTANOS</a>
+    <a href="politicas-privacidad.html">POLÍTICAS Y PRIVACIDAD</a>
+</nav>
+
+<section class="section">
+    <div class="hero">
+        <div class="hero-text">
+            <h1>PLAN POR EQUIPO</h1>
+            <h2>Paga solo por los partidos de tu equipo favorito</h2>
+        </div>
+        <button class="btn">CONTRATAR PLAN</button>
+    </div>
+</section>
+
+<section class="detalles">
+    <div class="card">
+        <h3>🎯 Selección de Equipo</h3>
+        <p>Elige el equipo que quieres seguir y accede solo a sus partidos.</p>
+    </div>
+
+    <div class="card">
+        <h3>💸 Pago por Partido</h3>
+        <p>Paga únicamente por los partidos que veas, sin suscripciones fijas.</p>
+    </div>
+
+    <div class="card">
+        <h3>📱 Acceso Exclusivo</h3>
+        <p>Disfruta de contenido exclusivo y estadísticas de tu equipo.</p>
+    </div>
+</section>
+
+<footer>
+    <div>📧 futchoice@gmail.com</div>
+    <div>📱 +665489797</div>
+</footer>
+
+</div>
+
+</body>
+</html>
