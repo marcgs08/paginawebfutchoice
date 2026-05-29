@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quiénes Somos - FutChoice</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
 <style>
 *{
     margin:0;
@@ -12,16 +14,19 @@
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 body{
     background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
     color:white;
 }
+
 .container{
     width:90%;
     max-width:1200px;
     margin:auto;
     padding:50px 0;
 }
+
 h1{
     text-align:center;
     font-size:48px;
@@ -30,10 +35,12 @@ h1{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
+
 p{
     text-align:center;
     font-size:18px;
     margin-top:20px;
+    line-height:1.8;
 }
 
 .section{
@@ -45,9 +52,11 @@ p{
     padding:30px;
 }
 
-/* HEADER PRINCIPAL DE TEXTO */
-header{
-    text-align:center;
+.logo-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
     padding:20px 0;
     font-size:24px;
     font-weight:900;
@@ -55,7 +64,12 @@ header{
     color:#2ecc71;
 }
 
-/* NAV */
+.logo-header img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
 nav{
     display:flex;
     justify-content:center;
@@ -74,13 +88,23 @@ nav a{
 nav a:hover{
     color:#2ecc71;
 }
+
+.logo{
+    display:block;
+    margin:40px auto 0 auto;
+    width:180px;
+    height:auto;
+}
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
-<header>
-    FUTCHOICE
+<header class="logo-header">
+    <img src="img/fclogo.png" alt="FutChoice Logo">
+    <span>FUTCHOICE</span>
 </header>
 
 <nav>
@@ -90,12 +114,26 @@ nav a:hover{
     <a href="politicas-privacidad.html">POLÍTICAS Y PRIVACIDAD</a>
 </nav>
 
-    <section class="section">
-        <h1>Quiénes Somos</h1>
-        <p>Somos FutChoice, tu plataforma de streaming del deporte rey. Ofrecemos el mejor contenido al mejor precio.</p>
-        <p>una plataforma de streaming, únicamente especializada en el fútbol, con ofertas únicas y específicas para cada usuario, con el objetivo de reducir el gasto excesivo que tiene ver el fútbol a día de hoy.</p>
-    </section>
+<section class="section">
+
+    <h1>Quiénes Somos</h1>
+
+    <p>
+        Somos FutChoice, tu plataforma de streaming del deporte rey.
+        Ofrecemos el mejor contenido al mejor precio.
+    </p>
+
+    <p>
+        Una plataforma de streaming, únicamente especializada en el fútbol,
+        con ofertas únicas y específicas para cada usuario,
+        con el objetivo de reducir el gasto excesivo que tiene ver el fútbol a día de hoy.
+    </p>
+
+    <img src="img/fclogo.png" alt="logo" class="logo">
+
+</section>
 
 </div>
+
 </body>
 </html>

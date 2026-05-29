@@ -26,9 +26,11 @@ body{
     margin:auto;
 }
 
-/* HEADER PRINCIPAL DE TEXTO */
-header{
-    text-align:center;
+.logo-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
     padding:20px 0;
     font-size:24px;
     font-weight:900;
@@ -36,7 +38,12 @@ header{
     color:#2ecc71;
 }
 
-/* NAV */
+.logo-header img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
 nav{
     display:flex;
     justify-content:center;
@@ -56,16 +63,15 @@ nav a:hover{
     color:#2ecc71;
 }
 
-/* CARRUSEL DE IMÁGENES */
 .carousel{
     width:100%;
     height:300px;
     position:relative;
     overflow:hidden;
     margin-bottom:50px;
-    border-radius: 20px;
-    border: 2px solid #2ecc71;
-    box-shadow: 0 0 20px rgba(46,204,113,0.5);
+    border-radius:20px;
+    border:2px solid #2ecc71;
+    box-shadow:0 0 20px rgba(46,204,113,0.5);
 }
 
 .carousel img{
@@ -76,23 +82,22 @@ nav a:hover{
     left:0;
     opacity:0;
     transition:opacity 1s ease-in-out;
-    object-fit: cover;
-    object-position: top;
+    object-fit:cover;
+    object-position:top;
 }
 
 .carousel img:nth-child(2){
-    object-position: 50% 0%;
+    object-position:50% 0%;
 }
 
 .carousel img:nth-child(3){
-    object-position: 50% 60%;
+    object-position:50% 60%;
 }
 
 .carousel img.active{
     opacity:1;
 }
 
-/* HERO */
 .hero{
     display:flex;
     justify-content:space-between;
@@ -103,7 +108,7 @@ nav a:hover{
 .hero-text h1{
     font-size:48px;
     font-weight:900;
-    background: linear-gradient(90deg, #2ecc71, #00ff99);
+    background:linear-gradient(90deg, #2ecc71, #00ff99);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -116,7 +121,7 @@ nav a:hover{
 
 .btn{
     padding:18px 40px;
-    background: linear-gradient(45deg,#2ecc71,#00ff99);
+    background:linear-gradient(45deg,#2ecc71,#00ff99);
     border:none;
     border-radius:50px;
     font-weight:700;
@@ -131,7 +136,6 @@ nav a:hover{
     box-shadow:0 0 40px rgba(46,204,113,0.8);
 }
 
-/* OFERTAS */
 .ofertas{
     display:flex;
     gap:40px;
@@ -154,7 +158,7 @@ nav a:hover{
     position:absolute;
     width:200%;
     height:200%;
-    background: radial-gradient(circle, rgba(46,204,113,0.15) 0%, transparent 70%);
+    background:radial-gradient(circle, rgba(46,204,113,0.15) 0%, transparent 70%);
     top:-50%;
     left:-50%;
     transform:rotate(25deg);
@@ -176,38 +180,25 @@ nav a:hover{
     margin-bottom:30px;
 }
 
-.card button{
+.card a.card-link,
+.card span.card-link{
+    display:inline-block;
     padding:12px 25px;
     border-radius:30px;
     border:none;
     background:#2ecc71;
     font-weight:bold;
+    text-decoration:none;
+    color:white;
     cursor:pointer;
     transition:0.3s;
 }
 
-.card button:hover{
+.card a.card-link:hover,
+.card span.card-link:hover{
     background:#00ff99;
 }
 
-.card a.card-link{
-    display: inline-block;
-    padding:12px 25px;
-    border-radius:30px;
-    border:none;
-    background:#2ecc71;
-    font-weight:bold;
-    text-decoration: none;
-    color: white;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.card a.card-link:hover{
-    background:#00ff99;
-}
-
-/* FOOTER */
 footer{
     border-top:1px solid #333;
     padding:40px 0;
@@ -217,8 +208,8 @@ footer{
     color:#aaa;
 }
 
-/* RESPONSIVE */
 @media(max-width:900px){
+
     .hero{
         flex-direction:column;
         text-align:center;
@@ -228,6 +219,19 @@ footer{
     .ofertas{
         flex-direction:column;
     }
+
+    nav{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .hero-text h2{
+        font-size:24px;
+    }
 }
 </style>
 </head>
@@ -236,8 +240,9 @@ footer{
 
 <div class="container">
 
-<header>
-    FUTCHOICE
+<header class="logo-header">
+    <img src="img/fclogo.png" alt="FutChoice Logo">
+    <span>FUTCHOICE</span>
 </header>
 
 <nav>
@@ -247,13 +252,10 @@ footer{
     <a href="politicas-privacidad.html">POLÍTICAS Y PRIVACIDAD</a>
 </nav>
 
-<!-- CARRUSEL DE IMÁGENES -->
 <div class="carousel">
     <img src="img/rm.jpg" class="active" alt="RM">
     <img src="img/fcb.jpg" alt="FCB">
     <img src="img/atm.jpg" alt="ATM">
-
-
 </div>
 
 <section class="hero">
@@ -261,25 +263,36 @@ footer{
         <h1>FÚTBOL MÁS BARATO</h1>
         <h2>Streaming personalizado sin pagar de más</h2>
     </div>
+
     <button class="btn">CONTRATAR AHORA</button>
 </section>
 
 <section class="ofertas">
-    <a href="plancompeticiones.html" style="display: block; text-decoration: none; color: inherit;">
-    <div class="card">
-        <h3>🔥 OFERTA COMPETICIÓN</h3>
-        <p>Disfruta tu liga favorita completa en HD. Acceso total, sin cortes y al mejor precio del mercado.</p>
-        <span class="card-link">VER PLAN</span>
-    </div>
+
+    <a href="plancompeticiones.html" style="display:block; text-decoration:none; color:inherit;">
+        <div class="card">
+            <h3>🔥 OFERTA COMPETICIÓN</h3>
+            <p>
+                Disfruta tu liga favorita completa en HD.
+                Acceso total, sin cortes y al mejor precio del mercado.
+            </p>
+
+            <span class="card-link">VER PLAN</span>
+        </div>
     </a>
 
-    <a href="planxequipo.html" style="display: block; text-decoration: none; color: inherit;">
-    <div class="card">
-        <h3>🔥 OFERTA EQUIPO</h3>
-        <p>Elige solo tu equipo y paga únicamente por sus partidos. Ideal para verdaderos fans.</p>
-        <span class="card-link">VER PLAN</span>
-    </div>
+    <a href="planxequipo.html" style="display:block; text-decoration:none; color:inherit;">
+        <div class="card">
+            <h3>🔥 OFERTA EQUIPO</h3>
+            <p>
+                Elige solo tu equipo y paga únicamente por sus partidos.
+                Ideal para verdaderos fans.
+            </p>
+
+            <span class="card-link">VER PLAN</span>
+        </div>
     </a>
+
 </section>
 
 <footer>
@@ -289,18 +302,20 @@ footer{
 
 </div>
 
-<!-- SCRIPT PARA EL CARRUSEL -->
 <script>
 const images = document.querySelectorAll(".carousel img");
 let current = 0;
 
 function nextImage() {
+
     images[current].classList.remove("active");
+
     current = (current + 1) % images.length;
+
     images[current].classList.add("active");
 }
 
-setInterval(nextImage, 3000); // Cambia imagen cada 3 segundos
+setInterval(nextImage, 3000);
 </script>
 
 </body>
