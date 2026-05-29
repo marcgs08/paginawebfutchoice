@@ -1,12 +1,60 @@
-- FutChoice
-- Marc Garcia Santasusana
--L’objectiu principal de FutChoice és oferir una alternativa més econòmica, flexible i personalitzada per consumir futbol en streaming.
+- 1. Títol
+FutChoice
+
+- 2. Integrants del projecte
+ Marc Garcia Santasusana
+
+- 3. Objectius
+L’objectiu principal de FutChoice és oferir una alternativa més econòmica, flexible i personalitzada per consumir futbol en streaming.
 Actualment, els preus de les plataformes tradicionals són molt elevats i obliguen els usuaris a contractar paquets amb continguts que moltes vegades no els interessen.
 
 FutChoice busca solucionar aquest problema permetent que cada usuari pagui únicament pels equips o competicions que realment vol veure, adaptant la subscripció als seus interessos i reduint així la despesa innecessària.
-- Com ja hem dit l’objectiu principal de FutChoice és oferir una alternativa més econòmica, flexible i personalitzada per consumir futbol en streaming.
+
+- 4. Explicació del projecte
+Com ja hem dit l’objectiu principal de FutChoice és oferir una alternativa més econòmica, flexible i personalitzada per consumir futbol en streaming.
 Actualment, els preus de les plataformes tradicionals són molt elevats i obliguen els usuaris a contractar paquets amb continguts que moltes vegades no els interessen.
-Llavors tenim dues solucions per aquests problema 
+Llavors tenim dues solucions per aquests problema:
+
 El pagament d´equips / El pagament de competicions: Aixo tracta de que tu pagarás nomes per l´equip(s) / competició(ns) que vols veure. 
-- Raspberry
--
+
+- 5. Material del projecte
+Raspberry
+
+- 6. Desenvolupament i desplegament (app i servidor)
+El desenvolupament de FutChoice s’ha realitzat seguint una estructura organitzada per fases, amb l’objectiu de crear una plataforma funcional, estable i fàcil d’utilitzar.
+
+En primer lloc, es van crear diferents maquetes i prototips de la interfície de la web/app per decidir quin disseny era més intuïtiu per als usuaris. També es van fer proves A/B testing per comparar diferents estructures visuals i millorar l’experiència d’usuari. 
+
+La pàgina principal de FutChoice presenta un disseny modern, minimalista i enfocat en l’experiència de l’usuari. La interfície utilitza una combinació de colors foscos amb tons verds per transmetre una identitat visual relacionada amb el futbol i el streaming digital.
+
+- 7. Planificació (històries, sprints i diagrama de Gantt)
+Per organitzar correctament el desenvolupament de FutChoice, el projecte s’ha dividit en diferents fases i tasques seguint una metodologia de treball estructurada. Aquesta planificació permet controlar el temps, repartir responsabilitats i assegurar que el projecte evoluciona de manera progressiva i funcional.
+Organització en sprints:
+Sprint 1 – Investigació i planificació
+Tasques principals:
+ - Encontar un problema real i que necessita solució 
+ - Definició de l´idea del negoci 
+ DURACIÓ APROXIMADA: 1/2 SETMANES  
+ Sprint 2 – Disseny i prototips
+ - Solució al problema
+ - Crear nom i identitat del projecte
+ - Creació models de la web (testing)
+ DURACIÓ APROXIMADA 1/2 SETMANES 
+ Sprint 3 - Desenvolupamnet frontend
+ - Elecció final web
+ - Desenvolupament de la pàgina escollida 
+ - Documentació
+ DURACIÓ APROXIMADA 1/2 SETMANES
+ Sprint 4 - Final
+ - Presentació
+ - Web finalitzada
+ 
+ Diagrama de Gantt
+
+El diagrama de Gantt mostra la distribució temporal de totes les fases del projecte.
+
+FASE	                                   DURACIÓ
+Investigació i planificació                1/2 SETMANES
+Disseny i prototips                        1/2 SETMANES
+Desenvolupamnet frontend                   1/2 SETMANES
+Final                                      1/2 SETMANES
